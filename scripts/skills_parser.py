@@ -5,7 +5,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 from matplotlib import pyplot as plt
 
-file_path = "C:/Users/Daddy/Downloads/vacancies_2024.csv"
+file_path = "C:/Users/Mikey/Downloads/vacancies_2024.csv"
 
 
 def process_data(df):

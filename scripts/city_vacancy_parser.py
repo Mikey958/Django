@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from concurrent.futures import ProcessPoolExecutor
 
-file_path = "C:/Users/Daddy/Downloads/vacancies_2024.csv"
+file_path = "C:/Users/Mikey/Downloads/vacancies_2024.csv"
 TOTAL_VACANCIES = 6915298  # Общее количество вакансий
 
 
