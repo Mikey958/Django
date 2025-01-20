@@ -33,8 +33,9 @@ def get_currency_rate(row):
 
 
 def process_data(df):
+    # Удаление строк с пропущенными значениями в столбце area_name
     df = df.dropna(subset=['area_name']).copy()
-    # Локальный словарь для подсчета вакансий в чанке
+    # Локальный словарь для подсчета вакансий
     vacancy_counter = {}
     # Подсчитываем количество вакансий для каждого города
     for area in df['area_name']:
@@ -43,10 +44,10 @@ def process_data(df):
         else:
             vacancy_counter[area] = 1
 
-    df = df.dropna(subset=['salary_currency']).copy()  # Убедитесь, что создается копия
+    df = df.dropna(subset=['salary_currency']).copy()
     df = extract_years_months(df)
 
-    # Вычисляем среднюю зарплату с помощью векторных операций
+    # Вычисляем среднюю зарплату
     salary_from = df['salary_from']
     salary_to = df['salary_to']
 

@@ -67,6 +67,7 @@ def skills(request):
 
 
 def latest_jobs(request):
+
     job_title_keywords = ['Администратор баз данных', 'баз данных', 'оператор баз данных', 'базы данных', 'oracle',
                           'mysql', 'data base',
                           'database', 'dba', 'bd', 'бд', 'базами данны']

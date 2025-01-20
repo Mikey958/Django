@@ -4,4 +4,4 @@ ACADEMIC_GROUP = 'РИ-230935'
 
 PROFESSION_NAME = 'Администратор баз данных'
 
-SITE_NAME = 'AdminBD'
+SITE_NAME = 'AdministratorDB'

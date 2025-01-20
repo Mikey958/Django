@@ -8,19 +8,23 @@ body {
 }
 
 header {
-    background-color: #1b262c;
-    color: #bbe1fa;
-    padding: 20px;
+
+    background-color: #78938a;
+    color: #f1ddbf;
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+
+#description p {}
+
 header h1 {
     margin: 0;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 nav {
@@ -41,7 +45,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #bbe1fa;
+    font-weight: 500;
+    color: #f1ddbf;
+    font-size: 18px;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -50,8 +56,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0f4c75;
-    color: #ffffff;
+    background-color: #92ba92;
+    color: #fdfdfd;
 }
 
 nav ul li ul {
@@ -59,7 +65,7 @@ nav ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #1b262c;
+    background-color: #879e82;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 1;
@@ -79,16 +85,17 @@ nav ul li ul li a {
 }
 
 footer {
-    background-color: #1b262c;
-    color: #d3d3d3;
+    background-color: #78938a;
+    color: #f1ddbf;
     text-align: center;
     padding: 15px 0;
-    border-top: 1px solid #0f4c75;
+    border-top: 1px solid #666b5e;
 }
 
 footer p {
+    font-weight: 500;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 div {
@@ -167,11 +174,14 @@ div {
 }
 
 .profession-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
     background: #ffffff;
     padding: 30px;
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    line-height: 1.8;
     color: #1a1a2e;
     margin: 30px auto;
     max-width: 900px;
@@ -181,6 +191,14 @@ div {
 .profession-description:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profession-description-title {
+    font-weight: bold;
+    height: fit-content;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
 }
 
 #toggle-button {
@@ -266,7 +284,7 @@ div {
     gap: 10px;
     padding: 10px;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -284,9 +302,12 @@ div {
 }
 
 .gallery-item {
+    padding: 0;
     flex: 0 0 auto;
     scroll-snap-align: center;
     border-radius: 10px;
+    background:#525e75 ;
+    border: 10px solid #525e75;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -298,6 +319,8 @@ div {
 }
 
 .gallery-item img {
+    border-radius: 10px;
+    background: transparent;
     width: 200px;
     height: 150px;
     object-fit: cover;
@@ -363,4 +386,9 @@ div {
 
 .close-button:hover {
     background: #f2f2f2;
+}
+
+h2.home-title {
+    color: black;
+    text-align: center;
 }
